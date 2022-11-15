@@ -25,10 +25,16 @@ addList(arr, 12312)
 
 # print(addList(arr, 12312))
 
-print("{b}{a}".format(a='a', b='b'))
-print("{1}{0}".format(a, b))
+# print("{b}{a}".format(a='a', b='b'))
+# print("{1}{0}".format(a, b))
 
 
 def sumNum(num1: "int", num2: "int") -> int:
     """ python中函数通过在后面加:指明参数类型，->指明返回值类型 """
     return num1 + num2
+
+
+# Lambda函数
+lam = lambda k, v: "%s=%d" % (k, v)
+
+print(lam("a", 2))
